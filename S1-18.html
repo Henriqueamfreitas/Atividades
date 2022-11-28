@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Henrique Annicchino Mello de Freitas">
+    <meta  name="keywords" content="Formulário, HTML">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <header>
+        <figure>
+        <img src="https://kenzie.com.br/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75" alt="Logo da Kenzie">
+        </figure>
+    </header>
+
+    <main>
+    <section>
+    <h2>Formulário de Cadastro</h2>
+    <form>
+        <fieldset>
+       <!-- Nome --> 
+       <label for="nome">Nome</label>
+       <br>
+       <input id="nome" type="text" name="nome" placeholder="Digite seu nome aqui..." required  /> 
+       
+       <br>
+
+       <!-- E-mail -->
+       <label for="email">E-mail</label>
+       <br>
+       <input id="email" type="text" name="email" placeholder="Digite seu email aqui..." required  />
+       
+       <br>
+
+       <!-- Descrição (caixa de texto) -->
+       <label for="caixadetexto">Descrição</label>
+       <br>
+       <textarea name="caixadetexto" id="caixadetexto" placeholder="Fale mais sobre você aqui..." required></textarea>
+       
+
+       <br>
+
+       <!-- Módulo (select) -->
+       <label for="modulo">Módulo</label>
+       <br>
+       <select id="modulo" name="modulo" required>
+        <option value="">Escolher Módulo</option>
+        <option value="free">Free</option>
+        <option value="Premium">Premium</option>
+        <option value="Pro">Pro</option>
+       </select>
+
+       <br>
+
+       <!-- Senha -->
+       <label for="senha">Senha</label>
+       <br>
+       <input id="senha" type="password" name="senha" placeholder="Digite sua senha aqui..." required  />
+
+       <br>
+
+       <!-- Confirmar Senha -->
+       <label for="confirmarsenha">Confirmar Senha</label>
+       <br>
+       <input id="confirmarsenha" type="password" name="confirmarsenha" placeholder="Digite sua senha novamente aqui..." required  />
+       
+       <br>
+
+       <!-- Deseja receber novidades no seu e-mail? -->
+       <p>Deseja receber novidades no seu e-mail?</p>
+       <label for="sim">Sim</label> 
+       <input id="sim" type="radio" name="input" required></input>
+
+       <label for="nao">Não</label>
+       <input id="nao" type="radio" name="input" required></input>
+       
+       <br>
+
+       <!-- Botão Cadastrar -->
+       <button type="submit" style="background-color: black; color: white;"  >Cadastrar  </button>
+        </fieldset>
+    </section>
+    </main>
+    </form>
+</body>
+</html>
+
